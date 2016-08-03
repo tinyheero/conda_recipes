@@ -1,0 +1,10 @@
+package:
+  name: cellranger 
+  version: "1.1.0"
+
+build:
+  number: 0
+  binary_relocation: False
+
+source:
+  path: src
