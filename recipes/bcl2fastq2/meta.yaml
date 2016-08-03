@@ -1,0 +1,15 @@
+package:
+  name: bcl2fastq2
+  version: "2.17"
+
+build:
+  number: 0
+
+source:
+  path: src
+  #fn: bcl2fastq2-v2.17.1.14.tar.zip
+  #url: ftp://webdata2:webdata2@ussd-ftp.illumina.com/downloads/software/bcl2fastq/bcl2fastq2-v2.17.1.14.tar.zip
+
+requirements:
+  build:
+    - gcc
