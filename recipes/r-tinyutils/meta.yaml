@@ -8,7 +8,7 @@ source:
   fn: tinyutils_{{ version }}.tar.gz
   url: https://github.com/tinyheero/tinyutils/archive/v{{ version }}.tar.gz
 
-  md5: b1fa0d9c86acdf3572376d815108731e
+  md5: 27ef917879e17c27b1fdf746238a24ff
 
 build:
   build: 0
@@ -44,7 +44,6 @@ test:
     - "\"%R%\" -e \"library('tinyutils')\""  # [win]
 
 about:
-  home: https
-  license: MIT + file LICENSE
+  home: https://github.com/tinyheero/tinyutils
+  license: GPL-2
   summary: R package with utility functions to help with data analysis
-  license_family: MIT
