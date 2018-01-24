@@ -1,0 +1,46 @@
+package:
+  name: tinyutils 
+  version: "0.1.0"
+
+source:
+  fn: 0.1.0.tar.gz
+  url: https://github.com/tinyheero/tinyutils/archive/v0.1.0.tar.gz
+
+build:
+  build: 0
+
+  rpaths:
+    - lib/R/lib/
+    - lib/
+
+requirements:
+  build:
+    - r-base >=3.1.0
+    - r-data.table >=1.9.4
+    - r-ggplot2 >=1.0.0
+    - r-dplyr >=0.4.3
+    - r-som >=0.3.5
+    - bioconductor-preprocesscore >=1.28.0
+    - bioconductor-rsamtools >=1.20.5
+    - bioconductor-genomicranges >=1.20.8
+
+  run:
+    - r-base >=3.1.0
+    - r-data.table >=1.9.4
+    - r-ggplot2 >=1.0.0
+    - r-dplyr >=0.4.3
+    - r-som >=0.3.5
+    - bioconductor-preprocesscore >=1.28.0
+    - bioconductor-rsamtools >=1.20.5
+    - bioconductor-genomicranges >=1.20.8
+
+test:
+  commands:
+    - $R -e "library('tinyutils')"  # [not win]
+    - "\"%R%\" -e \"library('tinyutils')\""  # [win]
+
+about:
+  home: https
+  license: MIT + file LICENSE
+  summary: R package with utility functions to help with data analysis
+  license_family: MIT
